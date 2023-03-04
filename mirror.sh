@@ -2,15 +2,16 @@
 set -e
 
 GIT_PUSH_ARGS=${INPUT_GIT_PUSH_ARGS:-"--tags --force --prune"}
+MIRROR_NUMBER=0
 
 function mirror {
     if [ $# -lt 3 ]; then
         echo "Parameters: remote_name soruce_repository destination_repository1 destination_repository2 ..."
         return
     fi
-    
-    echo "-------------------------------------------------------------------"
 
+    MIRROR_NUMBER=`expr ${MIRROR_NUMBER} + 1`
+    
     index=0
     
     for des_rep in "$@"
@@ -18,7 +19,8 @@ function mirror {
         index=`expr $index + 1`
         
         if [ 1 = $index ]; then
-            echo "Mirror $index: $des_rep"
+            echo "-------------------------------------------------------------------"
+            echo "Mirror ${MIRROR_NUMBER}: $des_rep"
             echo "step1: mkdir -p $des_rep"
             mkdir -p $1
             cd $1
@@ -33,7 +35,7 @@ function mirror {
             continue
         fi
 
-        echo "step3: mirror`expr $index - 2` to ${des_rep}"
+        echo "step${index}: mirror`expr $index - 2` to ${des_rep}"
         echo "git remote add $1_${index} "$des_rep""
         git remote add $1_${index} "$des_rep";
         echo "eval git push ${GIT_PUSH_ARGS} $1_${index} "\"refs/remotes/origin/*:refs/heads/*\"""
@@ -59,3 +61,4 @@ do
     mirror $i;
 done
 
+echo "Total repository: ${MIRROR_NUMBER}"
