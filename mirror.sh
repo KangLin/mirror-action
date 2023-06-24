@@ -54,7 +54,7 @@ rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git ssh://kl222@gi
 rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git ssh://kl222@git.code.sf.net/p/chinesechesscontrol/code git@gitlab.com:kl222/ChineseChessControl.git")
 rep+=("RabbitProxyServer https://github.com/KangLin/RabbitProxyServer.git ssh://kl222@git.code.sf.net/p/rabbitproxyserver/code")
 rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git ssh://kl222@git.code.sf.net/p/rabbitcommon/code")
-rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git ssh://kl222@git.code.sf.net/p/FaceRecongnizer/code")
+rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git ssh://kl222@git.code.sf.net/p/FaceRecongnizer/code git@gitlab.com:kl222/FaceRecongnizer.git")
 rep+=("Documents https://github.com/KangLin/Documents.git git@gitlab.com:kl222/Documents.git")
 
 for i in "${rep[@]}";
