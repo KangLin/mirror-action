@@ -37,9 +37,9 @@ function mirror {
 
         echo "step${index}: mirror`expr $index - 2` to ${des_rep}"
         echo "git remote add $1_${index} "$des_rep""
-        git remote add $1_${index} "$des_rep";
-        echo "eval git push ${GIT_PUSH_ARGS} $1_${index} "\"refs/remotes/origin/*:refs/heads/*\"""
-        eval git push ${GIT_PUSH_ARGS} $1_${index} "\"refs/remotes/origin/*:refs/heads/*\""
+        git remote add $1_`expr $index - 2` "$des_rep";
+        echo "eval git push ${GIT_PUSH_ARGS} $1_`expr $index - 2` "\"refs/remotes/origin/*:refs/heads/*\"""
+        eval git push ${GIT_PUSH_ARGS} $1_`expr $index - 2` "\"refs/remotes/origin/*:refs/heads/*\""
 
     done
 
@@ -54,7 +54,7 @@ rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git ssh://kl222@gi
 rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git ssh://kl222@git.code.sf.net/p/chinesechesscontrol/code git@gitlab.com:kl222/ChineseChessControl.git")
 rep+=("RabbitProxyServer https://github.com/KangLin/RabbitProxyServer.git ssh://kl222@git.code.sf.net/p/rabbitproxyserver/code")
 rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git ssh://kl222@git.code.sf.net/p/rabbitcommon/code")
-rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@gitlab.com:kl222/FaceRecongnizer.git ssh://kl222@git.code.sf.net/p/facerecognizer/code")
+rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@gitlab.com:kl222/FaceRecognizer.git ssh://kl222@git.code.sf.net/p/facerecognizer/code")
 rep+=("Documents https://github.com/KangLin/Documents.git git@gitlab.com:kl222/Documents.git")
 
 for i in "${rep[@]}";
