@@ -57,7 +57,7 @@ rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git ssh://kl222@git.
 rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@gitlab.com:kl222/FaceRecognizer.git ssh://kl222@git.code.sf.net/p/facerecognizer/code")
 rep+=("Documents https://github.com/KangLin/Documents.git git@gitlab.com:kl222/Documents.git")
 rep+=("TransformCoordinate https://github.com/KangLin/TransformCoordinate.git git@gitlab.com:kl222/TransformCoordinate.git ssh://kl222@git.code.sf.net/p/transformcoordinate/code")
-rep+=("TransformCoordinate https://github.com/KangLin/pre2006 git@gitlab.com:kl222/pre2006 ssh://kl222@git.code.sf.net/p/pre2006)
+rep+=("TransformCoordinate https://github.com/KangLin/pre2006 git@gitlab.com:kl222/pre2006 ssh://kl222@git.code.sf.net/p/pre2006")
 
 for i in "${rep[@]}";
 do
