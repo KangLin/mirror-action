@@ -47,17 +47,23 @@ function mirror {
 
 # "remote_name soruce_repository destination_repository1 destination_repository2 ..."
 rep=("RabbitRemoteControl https://github.com/KangLin/RabbitRemoteControl.git ssh://kl222@git.code.sf.net/p/rabbitremotecontrol/code git@bitbucket.org:kl222/rabbitremotecontrol.git git@invent.kde.org:kanglin/RabbitRemoteControl.git")
-rep+=("SerialPortAssistant https://github.com/KangLin/SerialPortAssistant.git ssh://kl222@git.code.sf.net/p/serialportassistant/code git@gitlab.com:kl222/SerialPortAssistant.git git@invent.kde.org:kanglin/SerialPortAssistant.git")
+rep+=("SerialPortAssistant https://github.com/KangLin/SerialPortAssistant.git ssh://kl222@git.code.sf.net/p/serialportassistant/code git@gitlab.com:kl222/SerialPortAssistant.git ")
 rep+=("RabbitIm https://github.com/KangLin/RabbitIm.git ssh://kl222@git.code.sf.net/p/rabbitim/code")
-rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git ssh://kl222@git.code.sf.net/p/lunarcalendar/code git@gitlab.com:kl222/LunarCalendar.git git@invent.kde.org:kanglin/LunarCalendar.git")
-rep+=("Calendar https://github.com/KangLin/Calendar.git ssh://kl222@git.code.sf.net/p/rabbitcalendar/code git@gitlab.com:kl222/Calendar.git git@invent.kde.org:kanglin/Calendar.git")
-rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git ssh://kl222@git.code.sf.net/p/chinesechesscontrol/code git@gitlab.com:kl222/ChineseChessControl.git git@invent.kde.org:kanglin/ChineseChessControl.git")
+rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git ssh://kl222@git.code.sf.net/p/lunarcalendar/code git@gitlab.com:kl222/LunarCalendar.git")
+rep+=("Calendar https://github.com/KangLin/Calendar.git ssh://kl222@git.code.sf.net/p/rabbitcalendar/code git@gitlab.com:kl222/Calendar.git ")
+rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git ssh://kl222@git.code.sf.net/p/chinesechesscontrol/code git@gitlab.com:kl222/ChineseChessControl.git ")
 rep+=("RabbitProxyServer https://github.com/KangLin/RabbitProxyServer.git ssh://kl222@git.code.sf.net/p/rabbitproxyserver/code")
 rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git ssh://kl222@git.code.sf.net/p/rabbitcommon/code")
-rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@gitlab.com:kl222/FaceRecognizer.git ssh://kl222@git.code.sf.net/p/facerecognizer/code git@invent.kde.org:kanglin/facerecognizer.git")
+rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@gitlab.com:kl222/FaceRecognizer.git ssh://kl222@git.code.sf.net/p/facerecognizer/code")
 rep+=("Documents https://github.com/KangLin/Documents.git git@gitlab.com:kl222/Documents.git")
 rep+=("TransformCoordinate https://github.com/KangLin/TransformCoordinate.git git@gitlab.com:kl222/TransformCoordinate.git ssh://kl222@git.code.sf.net/p/transformcoordinate/code")
 rep+=("pre2006 https://github.com/KangLin/pre2006 git@gitlab.com:kl222/pre2006")
+
+rep+=("SerialPortAssistant https://github.com/KangLin/SerialPortAssistant.git git@invent.kde.org:kanglin/SerialPortAssistant.git")
+rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git git@invent.kde.org:kanglin/LunarCalendar.git")
+rep+=("Calendar https://github.com/KangLin/Calendar.git git@invent.kde.org:kanglin/Calendar.git")
+rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git git@invent.kde.org:kanglin/ChineseChessControl.git")
+rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@invent.kde.org:kanglin/facerecognizer.git")
 
 for i in "${rep[@]}";
 do
