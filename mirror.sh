@@ -66,7 +66,6 @@ rep+=("Calendar https://github.com/KangLin/Calendar.git git@invent.kde.org:kangl
 rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git git@invent.kde.org:kanglin/ChineseChessControl.git")
 rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@invent.kde.org:kanglin/facerecognizer.git")
 rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git git@invent.kde.org:kanglin/rabbitcommon.git")
-rep+=("Documents https://github.com/KangLin/Documents.git git@invent.kde.org:kanglin/documents.git")
 
 for i in "${rep[@]}";
 do
