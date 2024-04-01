@@ -62,9 +62,11 @@ rep+=("pre2006 https://github.com/KangLin/pre2006 git@gitlab.com:kl222/pre2006")
 rep+=("RabbitRemoteControl https://github.com/KangLin/RabbitRemoteControl.git git@invent.kde.org:kanglin/RabbitRemoteControl.git")
 rep+=("SerialPortAssistant https://github.com/KangLin/SerialPortAssistant.git git@invent.kde.org:kanglin/SerialPortAssistant.git")
 rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git git@invent.kde.org:kanglin/LunarCalendar.git")
+rep+=("Calendar https://github.com/KangLin/Calendar.git git@invent.kde.org:kanglin/Calendar.git")
 rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git git@invent.kde.org:kanglin/ChineseChessControl.git")
-#rep+=("Calendar https://github.com/KangLin/Calendar.git git@invent.kde.org:kanglin/Calendar.git")
-#rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@invent.kde.org:kanglin/facerecognizer.git")
+rep+=("FaceRecongnizer https://github.com/KangLin/FaceRecongnizer.git git@invent.kde.org:kanglin/facerecognizer.git")
+rep+=("RabbitCommon https://github.com/KangLin/RabbitCommon.git git@invent.kde.org:kanglin/rabbitcommon.git")
+rep+=("Documents https://github.com/KangLin/Documents.git git@invent.kde.org:kanglin/documents.git")
 
 for i in "${rep[@]}";
 do
