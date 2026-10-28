@@ -49,6 +49,7 @@ function mirror {
 rep=("RabbitRemoteControl https://github.com/KangLin/RabbitRemoteControl.git ssh://kl222@git.code.sf.net/p/rabbitremotecontrol/code git@ssh.bitbucket.org:kl222/rabbitremotecontrol.git ssh://git@codeberg.org/KangLin/RabbitRemoteControl.git")
 rep+=("SerialPortAssistant https://github.com/KangLin/SerialPortAssistant.git ssh://kl222@git.code.sf.net/p/serialportassistant/code git@ssh.bitbucket.org:kl222/serialportassistant.git ssh://git@codeberg.org/KangLin/TransformCoordinate.git")
 rep+=("RabbitIm https://github.com/KangLin/RabbitIm.git ssh://kl222@git.code.sf.net/p/rabbitim/code")
+rep+=("RabbitIm https://github.com/KangLin/RabbitIm.git ssh://git@codeberg.org/KangLin/Documents.git")
 rep+=("LunarCalendar https://github.com/KangLin/LunarCalendar.git ssh://kl222@git.code.sf.net/p/lunarcalendar/code git@ssh.bitbucket.org:kl222/lunarcalendar.git ssh://git@codeberg.org/KangLin/LunarCalendar.git")
 rep+=("Calendar https://github.com/KangLin/Calendar.git ssh://kl222@git.code.sf.net/p/rabbitcalendar/code ssh://git@codeberg.org/KangLin/Calendar")
 rep+=("chinesechesscontrol https://github.com/KangLin/ChineseChessControl.git ssh://kl222@git.code.sf.net/p/chinesechesscontrol/code git@ssh.bitbucket.org:kl222/chinesechesscontrol.git ssh://git@codeberg.org/KangLin/ChineseChessControl.git")
